@@ -19,4 +19,10 @@
     <PackageReference Include="Walle.Components" Version="3.0.0.16" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="ip2region.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>
