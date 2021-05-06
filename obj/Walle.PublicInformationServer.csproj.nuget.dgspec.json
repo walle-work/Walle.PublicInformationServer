@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj": {}
+    "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj": {
+    "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
+        "projectUniqueName": "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
         "projectName": "Walle.PublicInformationServer",
-        "projectPath": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
-        "packagesPath": "C:\\Users\\FenghuiXu\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\obj\\",
+        "projectPath": "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
+        "packagesPath": "C:\\Users\\fenghui.xu\\.nuget\\packages\\",
+        "outputPath": "E:\\Walle.PublicInformationServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\FenghuiXu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fenghui.xu\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -26,8 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://nuget.cdn.azure.cn/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net5.0": {
@@ -45,14 +44,6 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
-            "IPTools.China": {
-              "target": "Package",
-              "version": "[1.6.0, )"
-            },
-            "IPTools.Core": {
-              "target": "Package",
-              "version": "[1.6.0, )"
-            },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
               "version": "[5.0.4, )",

@@ -2,43 +2,6 @@
   "version": 3,
   "targets": {
     "net5.0": {
-      "IP2Region.Ex/1.2.0": {
-        "type": "package",
-        "compile": {
-          "lib/netstandard2.0/IP2Region.Ex.dll": {}
-        },
-        "runtime": {
-          "lib/netstandard2.0/IP2Region.Ex.dll": {}
-        }
-      },
-      "IPTools.China/1.6.0": {
-        "type": "package",
-        "dependencies": {
-          "IP2Region.Ex": "1.2.0",
-          "IPTools.Core": "1.6.0"
-        },
-        "compile": {
-          "lib/net5.0/IPTools.China.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/IPTools.China.dll": {}
-        }
-      },
-      "IPTools.Core/1.6.0": {
-        "type": "package",
-        "dependencies": {
-          "IP2Region.Ex": "1.2.0"
-        },
-        "compile": {
-          "lib/net5.0/IPTools.Core.dll": {}
-        },
-        "runtime": {
-          "lib/net5.0/IPTools.Core.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
-      },
       "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.4": {
         "type": "package",
         "dependencies": {
@@ -272,52 +235,6 @@
     }
   },
   "libraries": {
-    "IP2Region.Ex/1.2.0": {
-      "sha512": "B8TxhuAw72cPwjgf8pqDf62l1TJL0jXw4J13fXHg4Igq1OwT7SRotQX6gN6puyIgHVYLtKxnmhFf60oUITxmxA==",
-      "type": "package",
-      "path": "ip2region.ex/1.2.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "ip2region.ex.1.2.0.nupkg.sha512",
-        "ip2region.ex.nuspec",
-        "lib/netstandard2.0/IP2Region.Ex.dll"
-      ]
-    },
-    "IPTools.China/1.6.0": {
-      "sha512": "12VnC92ffiKlLRwr5Ay3uFvZMCB9SDNn77sVlNycQu1OJAunnuCNBOVZTkg9D2UL2cc+iMwra6if9viXhrrt7w==",
-      "type": "package",
-      "path": "iptools.china/1.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "iptools.china.1.6.0.nupkg.sha512",
-        "iptools.china.nuspec",
-        "lib/net45/IPTools.China.dll",
-        "lib/net451/IPTools.China.dll",
-        "lib/net452/IPTools.China.dll",
-        "lib/net461/IPTools.China.dll",
-        "lib/net5.0/IPTools.China.dll",
-        "lib/netcoreapp3.1/IPTools.China.dll"
-      ]
-    },
-    "IPTools.Core/1.6.0": {
-      "sha512": "qO+EY5vEwLKtOkQD1aMweM9pIVSFLwTi/Z2ZnX08qBXI4yPdRuguJJvzT2YVk2Addv999A+bWifIS8ahiwJcTg==",
-      "type": "package",
-      "path": "iptools.core/1.6.0",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "iptools.core.1.6.0.nupkg.sha512",
-        "iptools.core.nuspec",
-        "lib/net45/IPTools.Core.dll",
-        "lib/net451/IPTools.Core.dll",
-        "lib/net452/IPTools.Core.dll",
-        "lib/net461/IPTools.Core.dll",
-        "lib/net5.0/IPTools.Core.dll",
-        "lib/netcoreapp3.1/IPTools.Core.dll"
-      ]
-    },
     "Microsoft.AspNetCore.Authentication.JwtBearer/5.0.4": {
       "sha512": "gJ4v5Sh6AIzaz3okQ8pGuigTYfWAefaWfTobqU0YCKdsDMTUA1aAvcnVYqYUsb16vGcaVyWIBd4L8G9Ya5oU6w==",
       "type": "package",
@@ -799,8 +716,6 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
-      "IPTools.China >= 1.6.0",
-      "IPTools.Core >= 1.6.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 5.0.4",
       "Microsoft.AspNetCore.Authentication.OpenIdConnect >= 5.0.1",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
@@ -809,23 +724,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\FenghuiXu\\.nuget\\packages\\": {},
+    "C:\\Users\\fenghui.xu\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
+      "projectUniqueName": "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
       "projectName": "Walle.PublicInformationServer",
-      "projectPath": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
-      "packagesPath": "C:\\Users\\FenghuiXu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\FenghuiXu\\source\\repos\\Walle.PublicInformationServer\\obj\\",
+      "projectPath": "E:\\Walle.PublicInformationServer\\Walle.PublicInformationServer.csproj",
+      "packagesPath": "C:\\Users\\fenghui.xu\\.nuget\\packages\\",
+      "outputPath": "E:\\Walle.PublicInformationServer\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\FenghuiXu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\fenghui.xu\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -834,8 +749,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://nuget.cdn.azure.cn/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
@@ -853,14 +767,6 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
-          "IPTools.China": {
-            "target": "Package",
-            "version": "[1.6.0, )"
-          },
-          "IPTools.Core": {
-            "target": "Package",
-            "version": "[1.6.0, )"
-          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[5.0.4, )",
