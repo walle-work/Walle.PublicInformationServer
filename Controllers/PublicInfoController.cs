@@ -17,6 +17,7 @@ namespace Walle.PublicInformationServer.Controllers
         [HttpGet("/api/ip")]
         public async Task<RespIpInfoModel> GetIpInfoAsync([FromQuery] string ip)
         {
+
             IPAddress address;
             if (string.IsNullOrWhiteSpace(ip))
             {
@@ -29,15 +30,22 @@ namespace Walle.PublicInformationServer.Controllers
             int v = address.AddressFamily == System.Net.Sockets.AddressFamily.InterNetwork ? 4 : 6;
             var key = "f6db5d357d57ea11f56384c515390093";
             var url = $"https://restapi.amap.com/v5/ip?ip={address}&type={v}&key={key}";
-            HttpClient client = new HttpClient();
-            var respStr = await client.GetStringAsync(url);
-            RespIpInfoModel resp = respStr.ToObject<RespIpInfoModel>();
+            if (!RespIpInfoCache.TryGetValue(url, out RespIpInfoModel resp))
+            {
+                HttpClient client = new HttpClient();
+                var respStr = await client.GetStringAsync(url);
+                resp = respStr.ToObject<RespIpInfoModel>();
+                if (resp.Status != 0)
+                {
+                    RespIpInfoCache.Add(url, resp);
+                }
+            }
             return resp;
         }
 
         public class RespIpInfoModel
         {
-            public string Status { get; set; } = string.Empty;
+            public int Status { get; set; } = 0;
             public string Info { get; set; } = string.Empty;
             public string Country { get; set; } = string.Empty;
             public string Province { get; set; } = string.Empty;
@@ -48,6 +56,7 @@ namespace Walle.PublicInformationServer.Controllers
             public string Ip { get; set; } = string.Empty;
         }
 
+        public static Dictionary<string, RespIpInfoModel> RespIpInfoCache = new Dictionary<string, RespIpInfoModel>();
 
     }
 }
